@@ -27,9 +27,6 @@ class Education{
         this.dates = dates;
         this.major = major;
     }
-    get info(){
-        return this.institution + "<br>" + this.dates + "<br>" + this.major + "<br>";
-    }
 }
 
 var relevantJobs = {
@@ -115,6 +112,8 @@ document.getElementById("current-company").innerHTML = rightpoint.company;
 document.getElementById("current-dates").innerHTML = rightpoint.date;
 document.getElementById("current-position").innerHTML = rightpoint.position;
 document.getElementById("employer").innerHTML = print(relevantJobs);
-document.getElementById("school").innerHTML = school.info;
-document.getElementById("courses").innerHTML = "Relevant courses:<br>" + courses; 
+document.getElementById("school").innerHTML = school.institution;
+document.getElementById("dates").innerHTML = school.dates;
+document.getElementById("major").innerHTML = school.major;
+document.getElementById("courses").innerHTML = "Relevant courses: " + courses; 
 document.getElementById("testimonials").innerHTML = print(testimonials);

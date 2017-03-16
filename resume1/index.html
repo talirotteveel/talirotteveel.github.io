@@ -3,24 +3,27 @@
 <head>
 <script src="jquery-3.1.1.js"></script>
 <link rel="stylesheet" href="resume.css"></link>
-</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+</head>
 <body>
     
         <div>
             <h1 id="name"></h1>
-            <span id="location"></span> | +<span id="phone-number"></span> | <span class="color-pop" id="email-address"></span> 
+            <span id="location"></span> | +<span id="phone-number"></span> | <i class="material-icons">mail_outline</i> <span id="email-address"></span> 
         </div>
 
         <div class="left container">
             <h2>Work History</h2>
-                <br>
+        
                 <span id="current-position"></span><span class="pull-right" id="current-dates"></span>
                 <br>
                 <span class="color-pop" id="current-company"></span>
                 <table id="employer"></table>
             <h2>Education</h2>
-                <h4 id="school"></h4>
+                <span class="color-pop" id="school"></span><span class="pull-right" id="dates"></span>
+                <br>
+                <span id="major"></span>
                 <div id="courses"></div>
         </div>
 
@@ -40,7 +43,7 @@
                 <p><br>I'm just starting out</p>
                 <div class="skill-meter" data-rating="1" data-scale="10" data-title="KnockOutJS"></div>
                 <p><br>I'm just starting out</p>
-                <br>
+                
             <h2>Testimonials</h2>
             <table id="testimonials"></table>
         </div>
