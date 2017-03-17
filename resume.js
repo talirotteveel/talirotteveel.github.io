@@ -18,9 +18,10 @@ class Job{
         this.date = date;
     }
     get info(){
-        return this.position + "<br> " + this.company + "<br> " + this.date + "<br>";
+        return this.position + this.date + this.company;
     }
 }
+
 class Education{
     constructor(institution, dates, major){
         this.institution = institution;
@@ -33,24 +34,24 @@ var relevantJobs = {
     sectionOne: "Used ALM process development/documentation tools to plan and maintain project", 
     descriptionOne: {
         bulletOne: "Tackled website programming tasks (such as fixing bugs and adding features) using JavaScript, HTML, KnockOut, and C# using the .NET MVC framework.",
-        bulletTwo: "<br>Used SharePoint and VSTS to document issues/enhancements that needed to be worked on in the web application."
+        bulletTwo: "Used SharePoint and VSTS to document issues/enhancements that needed to be worked on in the web application."
     }, 
     sectionTwo: "Designed and developed an application/worked on existing application",
     descriptionTwo: { 
          bulletOne: "Planned for the project by creating goals, deciding who the audience would be, and what the aesthetics would look like.",
-         bulletTwo: "<br>For the UI, I used JavaScript, HTML, CSS, AngularJS, and BootStrap.",
-         bulletThree: "<br>For the back-end, I used C#. NET and created a SQL repository using design patterns."
+         bulletTwo: "For the UI, I used JavaScript, HTML, CSS, AngularJS, and BootStrap.",
+         bulletThree: "For the back-end, I used C#. NET and created a SQL repository using design patterns."
     },
     sectionThree: "DBDW SQL",
     descriptionThree: {
          bulletOne: "Executed database tasks such as updating/adding data, creating tables and using stored procedures in the production environment.",
-         bulletTwo: "<br>Created SSRS reports."
+         bulletTwo: "Created SSRS reports."
     },
     sectionFour: "Worked with manager to document team-end tasks, financials, and update manuals.",
     descriptionFour: {
          bulletOne: "Updated the web applications manual document when new features were implemented, pages were added, etc.", 
-         bulletTwo: "<br>Created Technical Guide manual that other team members can reference to.",
-         bulletThree: "<br>Updated and organized financial numbers in excel spreadsheets."
+         bulletTwo: "Created Technical Guide manual that other team members can reference to.",
+         bulletThree: "Updated and organized financial numbers in excel spreadsheets."
     }
 }
 
@@ -58,21 +59,21 @@ var courses= ["Java Programming", " Discrete Structures", " Human Computer Inter
 
 var testimonials = {
     Sotak: "<q>Ms. Rotteveel is a creative, enthusiastic, and insightful individual and is the type of person who can simultaneously draw on these traits to achieve the high level of performance that is characteristic of her work.</q><br>-Kenneth Sotak",
-    Paul: "<br><q>Tali has a unique blend of creativity and technical ability that makes her a value add for any team.</q><br> -Paul Hermany"
+    Paul: "<q>Tali has a unique blend of creativity and technical ability that makes her a value add for any team.</q><br> -Paul Hermany"
     
 }
 
 var print = function(list){
-    var listItems = '<dl>';
+    var listItems = '<ul>';
     for(var bullet in list){
         if(typeof list[bullet] == 'string') {
-            listItems+= '<dt>'+ list[bullet] + '</dt>';
+            listItems+= '<li>'+ list[bullet] + '</li>';
         }
         else {
-            listItems+= '<dd>' + print(list[bullet]) + '</dd>';
+            listItems+= print(list[bullet]);
         }
     }
-    return listItems + '</dl>';
+    return listItems + '</ul>';
 };
 
 (function($) {
@@ -85,7 +86,7 @@ $.fn.SkillMeter = function(options) {
       var title = me.data('title');
       var rating = me.data('rating');
       var scale = me.data('scale');
-      me.append('<h3>' + title + '</h3>');
+      me.append('<h4>' + title + '</h4>');
       for(var i = 0; i < scale; i++) {
         me.append('<span class="tick ' + (i < rating ? 'on' : 'off') + '"></span>')
       }
@@ -117,3 +118,17 @@ document.getElementById("dates").innerHTML = school.dates;
 document.getElementById("major").innerHTML = school.major;
 document.getElementById("courses").innerHTML = "Relevant courses: " + courses; 
 document.getElementById("testimonials").innerHTML = print(testimonials);
+
+
+document.getElementById("northside-company").innerHTML = northside.company;
+document.getElementById("northside-dates").innerHTML = northside.date;
+document.getElementById("northside-position").innerHTML = northside.position;
+document.getElementById("decero-company").innerHTML = decero.company;
+document.getElementById("decero-dates").innerHTML = decero.date;
+document.getElementById("decero-position").innerHTML = decero.position;
+document.getElementById("bluemartini-company").innerHTML = bluemartini.company;
+document.getElementById("bluemartini-dates").innerHTML = bluemartini.date;
+document.getElementById("bluemartini-position").innerHTML = bluemartini.position;
+document.getElementById("beanz-company").innerHTML = beanz.company;
+document.getElementById("beanz-dates").innerHTML = beanz.date;
+document.getElementById("beanz-position").innerHTML = beanz.position;
