@@ -1,17 +1,24 @@
-body {
+
+body{
     background-color: white;
-    font-family: "Verdana";
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-size: 14px;
     height: 100%;
     width: 100%;
     position: relative;
-    color: rgb(77, 77, 77);
+    color: #2E2E2E;
 }
-div, span {
-    color: rgb(77, 77, 77);
+.standard{
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color: #2E2E2E;
 }
-
+a{
+    color: #757575;
+}
 .left{
     float:left;
     width:60%;
@@ -51,7 +58,45 @@ div, span {
 }
 .material-icons.md-12 { font-size: 12px; }
 
+.icons{
+    width: 40px;
+    height: 40px;
+}
+.thumbnail{
+    height: 250px;
+    width: 250px;
+}
+.center{
+    text-align: center;
+}
+.image{
+    display: block;
+    margin: auto;
+    width: 69.5%;
+}
+.jumbotron-black{
+background-color: rgba(5,4,2,0.6);
+width:100%;
+margin-left:auto;
+margin-right:auto;
+padding: 15px; 
+color: #757575;
+}
 
+.background{
+    background-image: url("chi1.jpg");
+    margin-bottom: 0;
+    padding: 0;
+    height: 1000px;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: white;
+}
 
 
 
