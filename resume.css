@@ -16,8 +16,12 @@ body{
     font-size: 14px;
     color: #2E2E2E;
 }
-a{
-    color: #757575;
+a{  
+    color: #2E2E2E;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
 }
 .left{
     float:left;
@@ -61,6 +65,7 @@ a{
 .icons{
     width: 40px;
     height: 40px;
+    margin-bottom: 7px;
 }
 .thumbnail{
     height: 250px;
@@ -75,12 +80,12 @@ a{
     width: 69.5%;
 }
 .jumbotron-black{
-background-color: rgba(5,4,2,0.6);
+background-color: rgba(5,4,2,0.7);
 width:100%;
 margin-left:auto;
 margin-right:auto;
 padding: 15px; 
-color: #757575;
+color: white;
 }
 
 .background{
@@ -103,6 +108,21 @@ color: #757575;
     background-size: cover;
     color: white;
 }
-
-
+.fa {
+    font-size: 23px;
+    padding-top: 8px;
+    width: 40px;
+    height: 40px;
+    margin: 5px 2px;
+    text-align: center;
+    border-radius: 50%;
+}
+.fa-facebook {
+    background: black;
+    color: white;
+}
+.fa-linkedin {
+    background: black;
+    color: white;
+}
 
