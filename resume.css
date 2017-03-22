@@ -1,7 +1,7 @@
 
 body{
     background-color: white;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lora', serif;
     font-style: normal;
     font-size: 16px;
     height: 100%;
@@ -25,7 +25,8 @@ a:hover{
 }
 .left{
     float:left;
-    width:60%;
+    width:30%;
+    
 }
 .right{
     float:right;
@@ -79,14 +80,7 @@ a:hover{
     margin: auto;
     width: 69.5%;
 }
-.jumbotron-black{
-background-color: rgba(5,4,2,0.7);
-width:100%;
-margin-left:auto;
-margin-right:auto;
-padding: 15px; 
-color: white;
-}
+
 
 .background{
     background-image: url("chi1.jpg");
@@ -125,4 +119,106 @@ color: white;
     background: black;
     color: white;
 }
+.left-bio{
+    background-color: #2E2E2E;
+    margin-bottom: 0;
+    padding-top: 150px;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family:'Raleway', sans-serif;
+}
+.jumbotron{
+    height: 400px;
+}
+.jumbotron-white{
+    background-color: white;
+    color: #2E2E2E;
+    width: 100%;
+    padding: 50px;
+    font-family:'Lora', serif;
+}
+.jumbotron-white-fade{
+    background-color: rgba(255,255,255, 0.7);
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    color: black;
+}
+.jumbotron-grey{
+    background-color: #eeeeee ;
+    color: black;
+    font-family:'Lora', serif;
+    width: 100%;
+
+    padding: 50px;
+}
+.jumbotron-grey-header{
+    padding-top: 0px;
+}
+.jumbotron-dark{
+    background-color: #bdbdbd ;
+    color: black;
+    font-family:'Lora', serif;
+    padding: 50px;
+    height: 500px;
+}
+.portfolio{
+    padding-top: 50px;
+}
+.img-fade{
+    opacity: .7;
+    filter: alpha(opacity=50)
+}
+.img-fade:hover{
+    opacity: 1.0;
+    filter: alpha(opacity=100)
+}
+.image{
+    background-position: fixed;
+    background-size: cover;
+    padding-top: 0px;
+    height: 400px;
+}
+.image-laptop{
+    width: 30%;
+}
+.laptop-background{
+    background-image: url(laptop.png);
+}
+.image-bookapp{
+    width: 50%;
+}
+.computer-background{
+    background-image: url(computer.png);
+    width: 30%;
+    top: 0px;
+    left: 0;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.navbar{
+    opacity: .7;
+}
+.navbar:hover{
+    opacity: 1.0;
+}
+
+
+
 
