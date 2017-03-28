@@ -97,6 +97,12 @@ $.fn.SkillMeter = function(options) {
 
  $('.skill-meter').SkillMeter();
 
+
+
+
+
+
+
 const myResume = new Biography("Tali Rotteveel", "224-655-8058", "talirotteveel@hotmail.com", "Chicago", "IL");
 const rightpoint = new Job("Developer Intern", "Rightpoint Consulting", "10/2017 - present");
 const northside = new Job("Server", "Northside Bar and Grill", "04/2016 - 02/2017");
