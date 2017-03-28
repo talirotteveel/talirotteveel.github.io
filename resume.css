@@ -173,6 +173,7 @@ a:hover{
     font-family:'Lora', serif;
     width: 100%;
     padding: 50px;
+
 }
 .jumbotron-grey-header{
     padding-top: 0px;
@@ -274,7 +275,7 @@ a:hover{
 }
 .slider-slide-wrap {
     position: absolute;
-    width: 1400px;
+    width: 1500px;
     height: 100%;
     background-color: white;
 }

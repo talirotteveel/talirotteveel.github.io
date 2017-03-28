@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     var n = $(".slider-slide-wrap").length,
-        width = 1400,
+        width = 1500,
         newwidth = width * n;
 
     $('.slide-wrap').css({
@@ -10,7 +10,7 @@ $(document).ready(function () {
     });
 
     $(".slider-slide-wrap").each(function (i) {
-        var thiswid = 1700;
+        var thiswid = 1500;
         $(this).css({
             'left': thiswid * i
         });
@@ -18,6 +18,7 @@ $(document).ready(function () {
     /*on scroll move the indicator 'shown' class to the
     most visible slide on viewport
     */
+
     $('.slider-wrap').scroll(function () {
         var scrollLeft = $(this).scrollLeft();
         $(".slider-slide-wrap").each(function (i) {
@@ -29,6 +30,7 @@ $(document).ready(function () {
             }
         });
     });
+
     /* on left button click scroll to the previous sibling of the current visible slide */
     $('#slider-left').click(function () {
         var $prev = $('.slide-wrap .shown').prev();
