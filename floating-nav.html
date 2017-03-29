@@ -75,10 +75,10 @@ $(document).ready(function () {
             var elmWidth;
             if ($(window).scrollTop() > 200) {
                 elmWidth = $cache.css("width");
-                $cache.css({ 'position': 'fixed', 'top': '-5px', 'width': elmWidth, 'z-index': '5' });
+                $cache.css({ 'position': 'fixed', 'top': '-5px', 'width': elmWidth });
             } else {
                 elmWidth = $cache.css("width");
-                $cache.css({ 'position': 'relative', 'top': 'auto', 'width': '100%', 'z-index': 'auto' });
+                $cache.css({ 'position': 'relative', 'top': 'auto', 'width': '100%' });
             }
         }
         //if window resizes while element is in fixed position, keep width the same as it would be with 'width: 100%'
