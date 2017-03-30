@@ -73,7 +73,7 @@ $(document).ready(function () {
         function fixDiv() {
             var $cache = $('.top-floating-element');
             var elmWidth;
-            if ($(window).scrollTop() > 200) {
+            if ($(window).scrollTop() > 180) {
                 elmWidth = $cache.css("width");
                 $cache.css({ 'position': 'fixed', 'top': '-5px', 'width': elmWidth });
             } else {

@@ -52,3 +52,21 @@ $(document).ready(function () {
         }
     });
 });
+
+var autoSlide = setInterval(function(){
+        
+        var $first = $('.slide-wrap .shown').first();
+        
+        var $next = $('.slide-wrap .shown').next();
+
+        if ($next.length) {
+            $('.slider-wrap').animate({
+                scrollLeft: $next.position().left
+            }, 'slow');
+        }
+        else{
+            $('.slider-wrap').animate({
+                scrollLeft: $first
+            }, 'slow');;
+        }
+}, 20000);

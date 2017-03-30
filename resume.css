@@ -83,7 +83,6 @@ a:hover{
 }
 .button {
     border:5px solid #64b5f6;
-
     color: #64b5f6;
     padding: 15px 32px;
     text-align: center;
@@ -147,6 +146,12 @@ a:hover{
 .image-bookapp{
     width: 50%;
 }
+@media (max-width: 500px) {
+    .computer-background {
+        width: 200px;
+        height: 100px;
+    }
+}
 .computer-background{
     margin-left: 100px;
     background-image: url(laptop.png);
@@ -164,6 +169,8 @@ a:hover{
     background-size: cover;
     font-size: 28px;
 }
+
+
 .navbar{
     opacity: .7;
 }
@@ -224,4 +231,5 @@ a:hover{
     background-color: white;
     width: 1400px;
 }
+
 
