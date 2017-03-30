@@ -69,4 +69,4 @@ var autoSlide = setInterval(function(){
                 scrollLeft: $first
             }, 'slow');;
         }
-}, 20000);
+}, 30000);
