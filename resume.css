@@ -96,11 +96,11 @@ a:hover{
     margin-left: auto; 
     margin-right: auto;
 }
-
 .jumbotron-white{
     background-color: white;
     color: #2E2E2E;
     width: 100%;
+    height: 100%;
     padding: 50px;
     font-family:'Lora', serif;
 }
@@ -166,8 +166,6 @@ a:hover{
     background-size: cover;
     font-size: 28px;
 }
-
-
 .navbar{
     opacity: .7;
 }
@@ -240,7 +238,7 @@ a:hover{
     height: 40px; 
     margin-right: 40px;
 }
-@media (min-width: 640px) {
+@media (min-width: 400px) {
     .pull-right-sm {
         float: right;
     }
@@ -248,53 +246,156 @@ a:hover{
         float: left;
     }
 }
+@media screen and (max-width:400px){
+    .computer-background{
+        margin-left: 60px;
+        background-image: url(laptop.png);
+        position: cover;
+        width: 200px;
+        height: 160px;
+        font-family: 'Fredoka One', cursive;
+        color:#64b5f6;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: relative;
+        -webkit-background-size: cover;
+        background-size: cover;
+        font-size: 18px;
+        text-align:center;
+        margin-bottom: 80px;
+    }
+    .pull-right-sm{
+        margin-left:60px;
+    }
+    .pull-left-sm{
+        margin-right:60px;
+    }
+    .left{
+        margin-left: 10px;
+    }
+    .right{
+        margin-right: 0px;
+    }
+    .button {
+        border:3px solid #64b5f6;
+        color: #64b5f6;
+        padding: 5px 10.5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        display: block; 
+        margin-left:50px;
+        margin-right:50px; 
+    }
+}
+@media screen and (min-width:400px) and (max-width:600px){
+    .computer-background{
+        margin-left: 55px;
+        background-image: url(laptop.png);
+        position: cover;
+        width: 350px;
+        height: 280px;
+        font-family: 'Fredoka One', cursive;
+        color:#64b5f6;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: relative;
+        -webkit-background-size: cover;
+        background-size: cover;
+        font-size: 26px;
+        text-align:center;
+        margin-bottom: 80px;
+    }
+    .pull-right-sm{
+        margin-left:90px;
+    }
+    .pull-left-sm{
+        margin-right:60px;
+    }
+    .left{
+        margin-left: 45px;
+    }
+    .right{
+        margin-right: 0px;
+    }
+    .button {
+        border:3px solid #64b5f6;
+        color: #64b5f6;
+        padding: 5px 10.5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        display: block; 
+        margin-left:50px;
+        margin-right:50px; 
+    }
+}
+@media screen and (min-width:300px) and (max-width:600px){
+    .slider-slide-wrap {
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        background-color: white;
+    }
+}
+@media screen and (min-width:600px) and (max-width:800px){
+    .slider-slide-wrap {
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        background-color: white;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1000px){
+    .slider-slide-wrap {
+        position: absolute;
+        width: 800px;
+        height: 100%;
+        background-color: white;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1200px){
+    .slider-slide-wrap {
+        position: absolute;
+        width: 1000px;
+        height: 100%;
+        background-color: white;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1500px){
+    .slider-slide-wrap {
+        position: absolute;
+        width: 1200px;
+        height: 100%;
+        background-color: white;
+    }
+}
+@media screen and (min-width:1500px) and (max-width:1800px){
+    .slider-slide-wrap {
+        position: absolute;
+        width: 1500px;
+        height: 100%;
+        background-color: white;
+    }
+}
+@media screen and (min-width:1800px) and (max-width:2100px){
+    .slider-slide-wrap {
+        position: absolute;
+        width: 1800px;
+        height: 100%;
+        background-color: white;
+    }
+}
 
-@media screen and (min-width:320px) and (max-width:640px){
-.computer-background{
-    margin-left: 60px;
-    background-image: url(laptop.png);
-    position: cover;
-    width: 200px;
-    height: 160px;
-    font-family: 'Fredoka One', cursive;
-    color:#64b5f6;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: relative;
-    -webkit-background-size: cover;
-    background-size: cover;
-    font-size: 18px;
-    text-align:center;
-    margin-bottom: 80px;
-}
-.pull-right-sm{
-    margin-left:80px;
-}
-.pull-left-sm{
-    margin-right:80px;
-}
-.left{
-    margin-left: 10px;
-}
-.right{
-    margin-right: 0px;
-}
-.button {
-    border:5px solid #64b5f6;
-    color: #64b5f6;
-    padding: 5px 10.5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-    display: block; 
-    margin-left:50px;
-    margin-right:50px; 
-}
-
-}

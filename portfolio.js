@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     var n = $(".slider-slide-wrap").length,
-        width = 1500,
+        width = 2000,
         newwidth = width * n;
 
     $('.slide-wrap').css({
@@ -10,7 +10,7 @@ $(document).ready(function () {
     });
 
     $(".slider-slide-wrap").each(function (i) {
-        var thiswid = 1500;
+        var thiswid = 2000;
         $(this).css({
             'left': thiswid * i
         });
