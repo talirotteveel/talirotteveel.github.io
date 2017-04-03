@@ -92,6 +92,9 @@ a:hover{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .jumbotron-white{
@@ -145,25 +148,6 @@ a:hover{
 }
 .image-bookapp{
     width: 50%;
-}
-@media (max-width: 750px) {
-    .computer-background {
-        margin-left: 100px;
-        background-image: url(laptop.png);
-        position: cover;
-        width: 200px;
-        height: 100px;
-        font-family: 'Fredoka One', cursive;
-        color:#64b5f6;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: relative;
-        -webkit-background-size: cover;
-        background-size: cover;
-        font-size: 28px;
-    }
 }
 .computer-background{
     margin-left: 100px;
@@ -242,7 +226,75 @@ a:hover{
 }
 .slider-slide-wrap:nth-child(even) {
     background-color: white;
-    width: 1400px;
+    width: 1450px;
+}
+.left{
+    margin-left: 80px;
+}
+.right{
+    margin-right: 80px;
+}
+.ellipse{
+    display: inline-block; 
+    width: 50px; 
+    height: 40px; 
+    margin-right: 40px;
+}
+@media (min-width: 640px) {
+    .pull-right-sm {
+        float: right;
+    }
+    .pull-left-sm{
+        float: left;
+    }
 }
 
+@media screen and (min-width:320px) and (max-width:640px){
+.computer-background{
+    margin-left: 60px;
+    background-image: url(laptop.png);
+    position: cover;
+    width: 200px;
+    height: 160px;
+    font-family: 'Fredoka One', cursive;
+    color:#64b5f6;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-size: 18px;
+    text-align:center;
+    margin-bottom: 80px;
+}
+.pull-right-sm{
+    margin-left:80px;
+}
+.pull-left-sm{
+    margin-right:80px;
+}
+.left{
+    margin-left: 10px;
+}
+.right{
+    margin-right: 0px;
+}
+.button {
+    border:5px solid #64b5f6;
+    color: #64b5f6;
+    padding: 5px 10.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block; 
+    margin-left:50px;
+    margin-right:50px; 
+}
 
+}
