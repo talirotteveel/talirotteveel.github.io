@@ -246,12 +246,12 @@ a:hover{
         float: left;
     }
 }
-@media screen and (max-width:400px){
+@media (max-width:400px){
     .computer-background{
-        margin-left: 60px;
+        margin-left: 0px;
         background-image: url(laptop.png);
         position: cover;
-        width: 200px;
+        width: 250px;
         height: 160px;
         font-family: 'Fredoka One', cursive;
         color:#64b5f6;
@@ -267,13 +267,15 @@ a:hover{
         margin-bottom: 80px;
     }
     .pull-right-sm{
-        margin-left:60px;
+        margin-left:0px;
+        float: none;
     }
     .pull-left-sm{
-        margin-right:60px;
+        margin-right:0px;
+        float: none;
     }
     .left{
-        margin-left: 10px;
+        margin-left: 0px;
     }
     .right{
         margin-right: 0px;
@@ -353,7 +355,7 @@ a:hover{
 @media screen and (min-width:600px) and (max-width:800px){
     .slider-slide-wrap {
         position: absolute;
-        width: 300px;
+        width: 600px;
         height: 100%;
         background-color: white;
     }
@@ -382,10 +384,18 @@ a:hover{
         background-color: white;
     }
 }
-@media screen and (min-width:1500px) and (max-width:1800px){
+@media screen and (min-width:1500px) and (max-width:1700px){
     .slider-slide-wrap {
         position: absolute;
         width: 1500px;
+        height: 100%;
+        background-color: white;
+    }
+}
+@media screen and (min-width:1700px) and (max-width:1800px){
+    .slider-slide-wrap {
+        position: absolute;
+        width: 1700px;
         height: 100%;
         background-color: white;
     }
