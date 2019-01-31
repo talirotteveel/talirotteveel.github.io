@@ -1,13 +1,31 @@
 
 body{
+    margin-top: 10%;
     background-color: white;
-    font-family: 'Lora', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
-    font-size: 16px;
+    font-size: 11px;
     height: 100%;
     width: 100%;
     position: relative;
     color: #2E2E2E;
+}
+.left{
+   float: left;
+   width: 40%;
+   margin-right: 0px;
+}
+.right{
+    float: right;
+    width: 30%;
+    
+}
+.background{
+    background-color: #2E2E2E;
+    color: white;
+}
+.c{
+    margin-top: 20%;
 }
 a{  
     color: #2E2E2E;

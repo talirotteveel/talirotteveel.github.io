@@ -29,6 +29,7 @@ class Education{
         this.major = major;
     }
 }
+<<<<<<< HEAD
 var rightpointExperience = {
     sectionOne: "Built out reporting solutions leveraging PowerBI to provide real time views of our financial and staffing data. ",
     descriptionOne: {
@@ -45,6 +46,14 @@ var rightpointExperience = {
     }
 }
 var internExperience = {
+=======
+
+var softwareDevRP = {
+
+}
+
+var internship = {
+>>>>>>> 83e738cf723f9ebaaa2eaaebac1dac2e320938bf
     sectionOne: "Used ALM process development/documentation tools to plan and maintain project", 
     descriptionOne: {
         bulletOne: "Tackled website programming tasks (such as fixing bugs and adding features) using JavaScript, HTML, KnockOut, and C# using the .NET MVC framework.",
@@ -53,8 +62,8 @@ var internExperience = {
     sectionTwo: "Designed and developed an application/worked on existing application",
     descriptionTwo: { 
          bulletOne: "Planned for the project by creating goals, deciding who the audience would be, and what the aesthetics would look like.",
-         bulletTwo: "For the UI, I used JavaScript, HTML, CSS, AngularJS, and BootStrap.",
-         bulletThree: "For the back-end, I used C#. NET and created a SQL repository using design patterns."
+         bulletTwo: "Used JavaScript, HTML, CSS, AngularJS, and BootStrap for the UI",
+         bulletThree: "For the backend, used C#. NET and created a SQL repository using design patterns."
     },
     sectionThree: "DBDW SQL",
     descriptionThree: {
@@ -66,14 +75,15 @@ var internExperience = {
          bulletOne: "Updated the web applications manual document when new features were implemented, pages were added, etc.", 
          bulletTwo: "Created Technical Guide manual that other team members can reference to.",
          bulletThree: "Updated and organized financial numbers in excel spreadsheets."
-    }
+    },
+    sectionFive: "Mentored new interns"    
 }
 
-var courses= ["Java Programming", " Discrete Structures", " Human Computer Interaction", " Computer Organization", " Data Structures", " Operating Systems", " Computer Networks"];
+var courses= ["Java Programming", " Discrete Structures", " Human Computer Interaction", " Computer Organization", " Data Structures", " Operating Systems", " Computer Networks", " Software Engineering", " Modern Database Management", " Artificial Intelligence"];
 
 var testimonials = {
-    Sotak: "<q>Ms. Rotteveel is a creative, enthusiastic, and insightful individual and is the type of person who can simultaneously draw on these traits to achieve the high level of performance that is characteristic of her work.</q><br>-Kenneth Sotak",
-    Paul: "<q>Tali has a unique blend of creativity and technical ability that makes her a value add for any team.</q><br> -Paul Hermany"
+    Sotak: "<q>Ms. Rotteveel is a creative, enthusiastic, and insightful individual and is the type of person who can simultaneously draw on these traits to achieve the high level of performance that is characteristic of her work.</q><br>-Kenneth Sotak - Professor<br><br>",
+    Paul: "<q>Tali has a unique blend of creativity and technical ability that makes her a value add for any team.</q><br> -Paul Hermany - Supervisor"
     
 }
 
@@ -117,15 +127,26 @@ $.fn.SkillMeter = function(options) {
 
 
 
+<<<<<<< HEAD
 const myResume = new Biography("Tali Rotteveel", "224-655-8058", "talirotteveel4@gmail.com", "Chicago", "IL");
 const rightpointintern = new Job("Developer Intern", "Rightpoint Consulting", "10/2016 - 06/2017");
 const rightpoint = new Job("Software Developer", "Rightpoint Consulting", "06/2017 - present");
 const school = new Education("Northeastern Illinois University", "2013-2017", "Bachelor in Computer Science");
+=======
+const myResume = new Biography("Tali Rotteveel", "224-655-8058", "talirotteveel@hotmail.com", "Chicago", "IL");
+const rightpoint = new Job("Developer Intern", "Rightpoint Consulting", "10/2016 - present");
+const northside = new Job("Server", "Northside Bar and Grill", "04/2016 - 02/2017");
+const decero = new Job("Server", "De Cero", "06/2015 - 10/2016");
+const bluemartini = new Job("Hostess", "Blue Martini", "06/2014 - 07/2015");
+const beanz = new Job("Barista", "Beanz Coffee Cafe", "06/2013 - 07/2014");
+const school = new Education("Northeastern Illinois University", "Graduation: Dec. 2017", "Computer Science");
+>>>>>>> 83e738cf723f9ebaaa2eaaebac1dac2e320938bf
 
 document.getElementById("name").innerHTML = myResume.name;
 document.getElementById("phone-number").innerHTML = myResume.phoneNumber;
 document.getElementById("email-address").innerHTML = myResume.emailAddress;
 document.getElementById("location").innerHTML = myResume.location;
+<<<<<<< HEAD
 document.getElementById("intern-company").innerHTML = rightpointintern.company;
 document.getElementById("intern-dates").innerHTML = rightpointintern.date;
 document.getElementById("intern-position").innerHTML = rightpointintern.position;
@@ -134,6 +155,12 @@ document.getElementById("developer-employer").innerHTML = print(rightpointExperi
 document.getElementById("developer-position").innerHTML = rightpoint.position;
 document.getElementById("developer-company").innerHTML = rightpoint.company;
 document.getElementById("developer-dates").innerHTML = rightpoint.date;
+=======
+document.getElementById("current-company").innerHTML = rightpoint.company;
+document.getElementById("current-dates").innerHTML = rightpoint.date;
+document.getElementById("current-position").innerHTML = rightpoint.position;
+document.getElementById("employer").innerHTML = print(internship);
+>>>>>>> 83e738cf723f9ebaaa2eaaebac1dac2e320938bf
 document.getElementById("school").innerHTML = school.institution;
 document.getElementById("dates").innerHTML = school.dates;
 document.getElementById("major").innerHTML = school.major;
