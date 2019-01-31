@@ -30,7 +30,11 @@ class Education{
     }
 }
 
-var relevantJobs = {
+var softwareDevRP = {
+
+}
+
+var internship = {
     sectionOne: "Used ALM process development/documentation tools to plan and maintain project", 
     descriptionOne: {
         bulletOne: "Tackled website programming tasks (such as fixing bugs and adding features) using JavaScript, HTML, KnockOut, and C# using the .NET MVC framework.",
@@ -39,8 +43,8 @@ var relevantJobs = {
     sectionTwo: "Designed and developed an application/worked on existing application",
     descriptionTwo: { 
          bulletOne: "Planned for the project by creating goals, deciding who the audience would be, and what the aesthetics would look like.",
-         bulletTwo: "For the UI, I used JavaScript, HTML, CSS, AngularJS, and BootStrap.",
-         bulletThree: "For the back-end, I used C#. NET and created a SQL repository using design patterns."
+         bulletTwo: "Used JavaScript, HTML, CSS, AngularJS, and BootStrap for the UI",
+         bulletThree: "For the backend, used C#. NET and created a SQL repository using design patterns."
     },
     sectionThree: "DBDW SQL",
     descriptionThree: {
@@ -52,14 +56,15 @@ var relevantJobs = {
          bulletOne: "Updated the web applications manual document when new features were implemented, pages were added, etc.", 
          bulletTwo: "Created Technical Guide manual that other team members can reference to.",
          bulletThree: "Updated and organized financial numbers in excel spreadsheets."
-    }
+    },
+    sectionFive: "Mentored new interns"    
 }
 
-var courses= ["Java Programming", " Discrete Structures", " Human Computer Interaction", " Computer Organization", " Data Structures", " Operating Systems", " Computer Networks"];
+var courses= ["Java Programming", " Discrete Structures", " Human Computer Interaction", " Computer Organization", " Data Structures", " Operating Systems", " Computer Networks", " Software Engineering", " Modern Database Management", " Artificial Intelligence"];
 
 var testimonials = {
-    Sotak: "<q>Ms. Rotteveel is a creative, enthusiastic, and insightful individual and is the type of person who can simultaneously draw on these traits to achieve the high level of performance that is characteristic of her work.</q><br>-Kenneth Sotak",
-    Paul: "<q>Tali has a unique blend of creativity and technical ability that makes her a value add for any team.</q><br> -Paul Hermany"
+    Sotak: "<q>Ms. Rotteveel is a creative, enthusiastic, and insightful individual and is the type of person who can simultaneously draw on these traits to achieve the high level of performance that is characteristic of her work.</q><br>-Kenneth Sotak - Professor<br><br>",
+    Paul: "<q>Tali has a unique blend of creativity and technical ability that makes her a value add for any team.</q><br> -Paul Hermany - Supervisor"
     
 }
 
@@ -104,12 +109,12 @@ $.fn.SkillMeter = function(options) {
 
 
 const myResume = new Biography("Tali Rotteveel", "224-655-8058", "talirotteveel@hotmail.com", "Chicago", "IL");
-const rightpoint = new Job("Developer Intern", "Rightpoint Consulting", "10/2017 - present");
+const rightpoint = new Job("Developer Intern", "Rightpoint Consulting", "10/2016 - present");
 const northside = new Job("Server", "Northside Bar and Grill", "04/2016 - 02/2017");
 const decero = new Job("Server", "De Cero", "06/2015 - 10/2016");
 const bluemartini = new Job("Hostess", "Blue Martini", "06/2014 - 07/2015");
 const beanz = new Job("Barista", "Beanz Coffee Cafe", "06/2013 - 07/2014");
-const school = new Education("Northeastern Illinois University", "2013-2017", "Computer Science");
+const school = new Education("Northeastern Illinois University", "Graduation: Dec. 2017", "Computer Science");
 
 document.getElementById("name").innerHTML = myResume.name;
 document.getElementById("phone-number").innerHTML = myResume.phoneNumber;
@@ -118,7 +123,7 @@ document.getElementById("location").innerHTML = myResume.location;
 document.getElementById("current-company").innerHTML = rightpoint.company;
 document.getElementById("current-dates").innerHTML = rightpoint.date;
 document.getElementById("current-position").innerHTML = rightpoint.position;
-document.getElementById("employer").innerHTML = print(relevantJobs);
+document.getElementById("employer").innerHTML = print(internship);
 document.getElementById("school").innerHTML = school.institution;
 document.getElementById("dates").innerHTML = school.dates;
 document.getElementById("major").innerHTML = school.major;
