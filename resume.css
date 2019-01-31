@@ -16,6 +16,9 @@ a:hover{
     text-decoration: none;
     color: white;
 }
+.font-size{
+    font-size: 13px;
+}
 .color-pop {
     color: rgb(73,155,234);
 }
